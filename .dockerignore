@@ -1,0 +1,43 @@
+# Docker 建置時忽略的文件和目錄
+# 這些文件不會被複製到 Docker 映像中，可以加快建置速度並減小映像大小
+
+# IDE 和編輯器配置文件
+**/.classpath
+**/.project
+**/.settings
+**/.vs          # Visual Studio
+**/.vscode      # Visual Studio Code
+.idea/          # JetBrains Rider/IntelliJ
+*.sln.iml
+
+# Git 相關文件
+**/.git
+**/.gitignore
+
+# Docker 相關文件
+**/.dockerignore
+**/docker-compose*
+**/Dockerfile*
+
+# .NET 建置輸出目錄（會在容器中重新建置）
+**/bin
+**/obj
+
+# 環境變數和機密文件
+**/.env
+**/secrets.dev.yaml
+**/values.dev.yaml
+
+# 其他工具和臨時文件
+**/.toolstarget
+**/*.*proj.user
+**/*.dbmdl
+**/*.jfm
+**/azds.yaml
+**/charts
+**/node_modules
+**/npm-debug.log
+
+# 文檔文件
+LICENSE
+README.md
