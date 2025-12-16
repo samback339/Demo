@@ -30,6 +30,44 @@
 
 ## 使用 Docker 啟動 Jenkins
 
+### 步驟 0：安裝 Docker
+
+在開始之前，請確保你的電腦已安裝 Docker。
+
+#### macOS
+
+1. 下載 Docker Desktop for Mac：
+   - 前往 [Docker 官網](https://www.docker.com/products/docker-desktop/)
+   - 下載 Docker Desktop for Mac（Apple Silicon 或 Intel 版本）
+
+2. 安裝 Docker Desktop：
+   - 雙擊下載的 `.dmg` 文件
+   - 拖動 Docker 圖標到應用程式資料夾
+   - 打開 Docker Desktop 並等待啟動完成
+
+3. 驗證安裝：
+   ```bash
+   docker --version
+   docker ps
+   ```
+
+#### Windows
+
+1. 下載 Docker Desktop for Windows：
+   - 前往 [Docker 官網](https://www.docker.com/products/docker-desktop/)
+   - 下載 Docker Desktop for Windows
+
+2. 安裝 Docker Desktop：
+   - 執行安裝程式
+   - 確保啟用 WSL 2（Windows Subsystem for Linux 2）
+   - 重啟電腦
+
+3. 驗證安裝：
+   ```powershell
+   docker --version
+   docker ps
+   ```
+
 ### 步驟 1：創建 Jenkins 數據目錄
 
 ```bash
