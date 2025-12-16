@@ -101,7 +101,7 @@ docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 4. 創建第一個管理員帳號
 5. 完成安裝
 
-### 步驟 5：安裝 Docker 相關插件（可選）
+### 步驟 5：安裝 Docker 相關插件
 
 Jenkins 已經可以使用主機的 Docker，但如果需要更多功能：
 
