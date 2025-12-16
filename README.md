@@ -1,6 +1,8 @@
-# Demo - .NET 8.0 Web API 專案
+# Demo - .NET 8.0 Web API 專案 (macOS 版本)
 
 這是一個使用 .NET 8.0 開發的 Web API 專案，支援使用 Docker 和 Jenkins 進行自動化部署。
+
+> **注意**: 這是 macOS 版本的安裝指南。如果你使用的是 Windows，請參考 [README-Windows.md](README-Windows.md)
 
 ## 📋 目錄
 
@@ -47,23 +49,6 @@
 
 3. 驗證安裝：
    ```bash
-   docker --version
-   docker ps
-   ```
-
-#### Windows
-
-1. 下載 Docker Desktop for Windows：
-   - 前往 [Docker 官網](https://www.docker.com/products/docker-desktop/)
-   - 下載 Docker Desktop for Windows
-
-2. 安裝 Docker Desktop：
-   - 執行安裝程式
-   - 確保啟用 WSL 2（Windows Subsystem for Linux 2）
-   - 重啟電腦
-
-3. 驗證安裝：
-   ```powershell
    docker --version
    docker ps
    ```
@@ -176,21 +161,3 @@ exit
    - 啟動新容器
 
 ---
-
-## 📁 專案結構
-
-```
-Demo/
-├── Demo/                    # 主要專案目錄
-│   ├── Program.cs          # 應用程式入口
-│   ├── Demo.csproj         # 專案配置
-│   ├── appsettings.json    # 應用程式設定
-│   └── Properties/
-│       └── launchSettings.json
-├── Dockerfile              # Docker 映像建置文件
-├── .dockerignore           # Docker 忽略文件
-├── Jenkinsfile             # Jenkins Pipeline 腳本
-├── docker-compose.yml      # Docker Compose 配置
-├── .gitignore              # Git 忽略文件
-└── README.md               # 本文件
-```
